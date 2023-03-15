@@ -1,16 +1,12 @@
 import sys
 
-from util import code_check as cc
+from util import lab_3_e_util as l3e
 
 
 def print_log_with_code_200():
     for line in sys.stdin:
-        try:
-            if cc.is_wanted_code(line, '200'):
-                print(line)
-
-        except Exception as e:
-            print(e)
+        if l3e.is_code_200(line):
+            print(line)
 
 
 if __name__ == '__main__':
