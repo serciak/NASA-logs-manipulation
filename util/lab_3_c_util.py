@@ -14,6 +14,7 @@ def get_biggest_asset():
                 biggest_asset = match
                 biggest_asset_size = int(match.group(6))
         except Exception as e:
-            print(e)
+            #print(e)
+            pass
 
     return biggest_asset

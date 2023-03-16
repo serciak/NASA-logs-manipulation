@@ -17,7 +17,8 @@ def images_ratio():
             else:
                 others_count += 1
         except Exception as e:
-            print(e)
+            #print(e)
+            pass
 
     return image_count / others_count
 

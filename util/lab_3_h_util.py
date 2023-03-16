@@ -11,4 +11,5 @@ def is_pl(line):
         return domain == 'pl'
 
     except Exception as e:
-        print(e)
+        #print(e)
+        pass

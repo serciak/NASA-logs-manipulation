@@ -7,4 +7,5 @@ def is_code_200(line):
             print(line)
 
     except Exception as e:
-        print(e)
+        #print(e)
+        pass

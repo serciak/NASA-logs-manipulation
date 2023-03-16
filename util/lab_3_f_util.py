@@ -13,4 +13,5 @@ def print_logs_between_22_6():
                 print(line)
 
         except Exception as e:
-            print(e)
+            #print(e)
+            pass

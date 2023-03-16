@@ -1,0 +1,8 @@
+.DS_Store
+NASA
+util/__pycache__/code_check.cpython-311.pyc
+util/__pycache__/get_file_extension.cpython-311.pyc
+util/__pycache__/is_time_between.cpython-311.pyc
+util/__pycache__/lab_3_a_util.cpython-311.pyc
+util/__pycache__/lab_3_h_util.cpython-311.pyc
+util/__pycache__/regex_matches.cpython-311.pyc

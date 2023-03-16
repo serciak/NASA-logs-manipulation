@@ -9,4 +9,5 @@ def is_wanted_code(line, wanted_code):
         else:
             return False
     except Exception as e:
-        print(e)
+        #print(e)
+        pass

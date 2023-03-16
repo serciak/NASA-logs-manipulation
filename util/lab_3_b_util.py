@@ -11,6 +11,7 @@ def get_log_size_sum():
             if match.group(6) != '-':
                 size += int(match.group(6))
         except Exception as e:
-            print(e)
+            #print(e)
+            pass
 
     return size

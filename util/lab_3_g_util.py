@@ -11,4 +11,5 @@ def is_friday(line):
         return datetime.weekday(d) == 4
 
     except Exception as e:
-        print(e)
+        #print(e)
+        pass

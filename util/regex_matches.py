@@ -15,4 +15,4 @@ def get_regex_match(log):
     if match2 is not None:
         return match2
 
-    raise Exception('Incorrect log formatting')
+    raise Exception('Incorrect log formatting: ', log)
