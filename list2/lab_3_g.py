@@ -1,7 +1,7 @@
 import sys
 sys.path.append('../')
 
-from util import lab_3_g_util as l3g
+from list2_util import lab_3_g_util as l3g
 
 
 def print_logs_friday():
