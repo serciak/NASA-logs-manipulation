@@ -1,4 +1,5 @@
 import sys
+sys.path.append('../')
 
 from util import lab_3_h_util as l3h
 

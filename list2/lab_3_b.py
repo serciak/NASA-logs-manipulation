@@ -1,3 +1,5 @@
+import sys
+sys.path.append('../')
 from util import lab_3_b_util as l3b
 from util import convert_bytes
 

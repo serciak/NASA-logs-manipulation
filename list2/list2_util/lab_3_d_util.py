@@ -1,5 +1,5 @@
 import sys
-
+sys.path.append('../')
 from util import regex_matches as rm
 from util import get_file_extension as gfe
 

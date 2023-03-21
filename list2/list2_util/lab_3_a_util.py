@@ -1,5 +1,5 @@
 import sys
-
+sys.path.append('../')
 from util import code_check as cc
 
 

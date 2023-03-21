@@ -1,5 +1,5 @@
 import sys
-
+sys.path.append('../')
 from util import lab_3_e_util as l3e
 
 

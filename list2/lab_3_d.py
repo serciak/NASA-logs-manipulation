@@ -1,3 +1,5 @@
+import sys
+sys.path.append('../')
 from util import lab_3_d_util as l3d
 
 

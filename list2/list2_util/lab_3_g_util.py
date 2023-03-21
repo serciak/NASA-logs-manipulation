@@ -1,14 +1,15 @@
 import sys
+sys.path.append('../')
 from datetime import datetime, time
 from util import regex_matches as rm
 from util import is_time_between as itb
 
 
-def is_pl(line):
+def is_friday(line):
     try:
         matches = rm.get_regex_match(line)
-        domain = matches.group(1).split(sep='.')[-1]
-        return domain == 'pl'
+        d = datetime.strptime(matches.group(2), '%d/%b/%Y')
+        return datetime.weekday(d) == 4
 
     except Exception as e:
         #print(e)

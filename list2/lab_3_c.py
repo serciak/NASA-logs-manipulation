@@ -1,3 +1,5 @@
+import sys
+sys.path.append('../')
 from util import lab_3_c_util as l3c
 
 if __name__ == '__main__':

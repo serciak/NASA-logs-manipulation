@@ -10,4 +10,4 @@ fe = gfe.get_file_extension(match)
 
 print(fe)
 
-print([group for group in match.groups()])
+print(match.groups())

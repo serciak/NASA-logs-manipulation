@@ -1,4 +1,5 @@
 import sys
+sys.path.append('../')
 from datetime import datetime, time
 from util import regex_matches as rm
 from util import is_time_between as itb
