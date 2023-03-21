@@ -1,6 +1,6 @@
 import sys
 sys.path.append('../')
-from util import lab_3_e_util as l3e
+from list2_util import lab_3_e_util as l3e
 
 
 def print_log_with_code_200():

@@ -56,10 +56,3 @@ def get_entries_by_extension(logs, ext):
 def print_entries(logs):
     for log in logs:
         print(log)
-
-
-if __name__ == '__main__':
-    logs = read_log()
-    logs = get_entries_by_extension(logs, 'jpg')
-    print_entries(logs)
-    #sort_log(logs, 5)

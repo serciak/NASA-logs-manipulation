@@ -1,7 +1,7 @@
 import sys
 sys.path.append('../')
 
-from util import lab_3_h_util as l3h
+from list2_util import lab_3_h_util as l3h
 
 
 def print_logs_pl():

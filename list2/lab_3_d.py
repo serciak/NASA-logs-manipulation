@@ -1,6 +1,6 @@
 import sys
 sys.path.append('../')
-from util import lab_3_d_util as l3d
+from list2_util import lab_3_d_util as l3d
 
 
 if __name__ == '__main__':

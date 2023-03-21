@@ -1,6 +1,6 @@
 import sys
 sys.path.append('../')
-from util import lab_3_c_util as l3c
+from list2_util import lab_3_c_util as l3c
 
 if __name__ == '__main__':
     biggest_asset = l3c.get_biggest_asset()
