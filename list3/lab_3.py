@@ -1,7 +1,5 @@
 import sys
 sys.path.append('../')
-from util import regex_matches as rm
-from lab_2 import convert_values
 import datetime
 
 def entry_to_dict(log):
@@ -42,13 +40,13 @@ def get_host_data(logs):
         first_date = log_time if log_time < first_date else first_date
         last_date = log_time if log_time > last_date else last_date
 
-    return requests_num, first_date, last_date, code_200_num/requests_num
+    return requests_num, first_date, last_date, round(code_200_num/requests_num, 2)
 
 
 def print_dict_entry_dates(logs_dict):
     for k, v in logs_dict.items():
         host_data = get_host_data(v)
-        print(f'host: {k}\treq num: {host_data[0]}\tstart: {host_data[1]}\tend: {host_data[2]}\t200 to other ratio: {host_data[3]}')
+        print(f'host: {k:<40}\treq num: {host_data[0]:<3}\tstart: {host_data[1]}\tend: {host_data[2]}\t200 to other ratio: {host_data[3]}')
 
 
 

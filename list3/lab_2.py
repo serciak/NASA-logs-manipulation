@@ -3,7 +3,6 @@ import os
 import datetime
 sys.path.append('../')
 from util import regex_matches as rm
-from util import get_file_extension as gfe
 
 def convert_values(match):
     domain, date, time, path, code, size = match.groups()
@@ -11,7 +10,7 @@ def convert_values(match):
     time = datetime.datetime.strptime(time, '%H:%M:%S')
     size = 0 if size == '-' else int(size)
 
-    return domain, date, time, path, int(code), size
+    return domain, date, time, path, int(code), int(size)
 
 def read_log():
     logs = []
@@ -49,6 +48,16 @@ def get_failed_reads(logs, separate):
         return codes_4xx, codes_5xx
     else:
         return get_entries_by_code_range(logs, 400, 599)
+    
+def get_failed_reads_concat(logs, separate):
+    codes_4xx = get_entries_by_code_range(logs, 400, 499)
+    codes_5xx = get_entries_by_code_range(logs, 500, 599)
+
+    if separate:
+        return codes_4xx, codes_5xx
+    
+    codes_4xx.extend(codes_5xx)
+    return codes_4xx
     
 def get_entries_by_extension(logs, ext):
     return list(filter(lambda log: log[3].split(os.extsep)[-1] == ext, logs))
